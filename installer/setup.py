@@ -19,7 +19,7 @@ if os.name == "posix":
                         ['man/mapcatcher.1.gz', 'man/mapdownloader.1.gz']),
                     ('share/pixmaps', ['images/mapcatcher.png']),
                     ('share/pixmaps/gmapcatcher',
-                    map(lambda(thestr): "images/" + thestr, os.listdir('images')))
+                    map(lambda(thestr): "images/" + thestr, os.listdir('images'))
         ],
         scripts = ['mapcatcher', 'mapdownloader'],
         packages = ['gmapcatcher', 'gmapcatcher.mapServers',
